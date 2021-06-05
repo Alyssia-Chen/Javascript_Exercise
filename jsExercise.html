@@ -89,16 +89,20 @@
     <footer style="text-align:center;">Goodbye! Goodbye!</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("footer").click(function() {
+      $( document ).ready(function(){
+        $("footer").click(function() {
         console.log("You clicked a footer!");
       });
+      })
     </script>
     <script>
-      $("table").click(function() {
+      $( document ).ready(function(){
+        $("table").click(function() {
         console.log("You clicked the table!");
         alert("Take your last look at the table before it disappears!");
         $("table").fadeOut();
       });
+      })
     </script>
   </body>
 </html>
